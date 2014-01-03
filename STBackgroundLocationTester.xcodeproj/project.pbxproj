@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7DEC17B1875456400948E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC17A1875456400948E19 /* Foundation.framework */; };
+		B7DEC17D1875456400948E19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC17C1875456400948E19 /* CoreGraphics.framework */; };
+		B7DEC17F1875456400948E19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC17E1875456400948E19 /* UIKit.framework */; };
+		B7DEC1851875456400948E19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7DEC1831875456400948E19 /* InfoPlist.strings */; };
+		B7DEC1871875456400948E19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1861875456400948E19 /* main.m */; };
+		B7DEC18B1875456400948E19 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC18A1875456400948E19 /* STAppDelegate.m */; };
+		B7DEC18E1875456400948E19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DEC18C1875456400948E19 /* Main.storyboard */; };
+		B7DEC1911875456400948E19 /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1901875456400948E19 /* STViewController.m */; };
+		B7DEC1931875456400948E19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DEC1921875456400948E19 /* Images.xcassets */; };
+		B7DEC19A1875456400948E19 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC1991875456400948E19 /* XCTest.framework */; };
+		B7DEC19B1875456400948E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC17A1875456400948E19 /* Foundation.framework */; };
+		B7DEC19C1875456400948E19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC17E1875456400948E19 /* UIKit.framework */; };
+		B7DEC1A41875456400948E19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7DEC1A21875456400948E19 /* InfoPlist.strings */; };
+		B7DEC1A61875456400948E19 /* STBackgroundLocationTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1A51875456400948E19 /* STBackgroundLocationTesterTests.m */; };
+		B7DEC1B1187545C300948E19 /* STSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1B0187545C300948E19 /* STSettingsViewController.m */; };
+		B7DEC1B31875478800948E19 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC1B21875478800948E19 /* MapKit.framework */; };
+		B7DEC1B5187547C300948E19 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEC1B4187547C300948E19 /* CoreLocation.framework */; };
+		B7DEC1B818754D9700948E19 /* STSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1B718754D9700948E19 /* STSettings.m */; };
+		B7DEC1BB187550A700948E19 /* STSettingItemPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1BA187550A700948E19 /* STSettingItemPickerView.m */; };
+		B7DEC1BD187550EB00948E19 /* STSettingItemPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEC1BC187550EB00948E19 /* STSettingItemPickerView.xib */; };
+		B7DEC1C01875537600948E19 /* STSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1BF1875537600948E19 /* STSettingItem.m */; };
+		B7DEC1C3187562A000948E19 /* NSDate+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1C2187562A000948E19 /* NSDate+ST.m */; };
+		B7DEC1C61875633500948E19 /* STLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC1C51875633500948E19 /* STLogCell.m */; };
+		B7DEC1CC1875638000948E19 /* STLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEC1CB1875638000948E19 /* STLogCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7DEC19D1875456400948E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DEC16F1875456400948E19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7DEC1761875456400948E19;
+			remoteInfo = STBackgroundLocationTester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7DEC1771875456400948E19 /* STBackgroundLocationTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STBackgroundLocationTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DEC17A1875456400948E19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B7DEC17C1875456400948E19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B7DEC17E1875456400948E19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B7DEC1821875456400948E19 /* STBackgroundLocationTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STBackgroundLocationTester-Info.plist"; sourceTree = "<group>"; };
+		B7DEC1841875456400948E19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7DEC1861875456400948E19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7DEC1881875456400948E19 /* STBackgroundLocationTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STBackgroundLocationTester-Prefix.pch"; sourceTree = "<group>"; };
+		B7DEC1891875456400948E19 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
+		B7DEC18A1875456400948E19 /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
+		B7DEC18D1875456400948E19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7DEC18F1875456400948E19 /* STViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STViewController.h; sourceTree = "<group>"; };
+		B7DEC1901875456400948E19 /* STViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
+		B7DEC1921875456400948E19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B7DEC1981875456400948E19 /* STBackgroundLocationTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STBackgroundLocationTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DEC1991875456400948E19 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B7DEC1A11875456400948E19 /* STBackgroundLocationTesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STBackgroundLocationTesterTests-Info.plist"; sourceTree = "<group>"; };
+		B7DEC1A31875456400948E19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7DEC1A51875456400948E19 /* STBackgroundLocationTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STBackgroundLocationTesterTests.m; sourceTree = "<group>"; };
+		B7DEC1AF187545C300948E19 /* STSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingsViewController.h; sourceTree = "<group>"; };
+		B7DEC1B0187545C300948E19 /* STSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingsViewController.m; sourceTree = "<group>"; };
+		B7DEC1B21875478800948E19 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B7DEC1B4187547C300948E19 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B7DEC1B618754D9700948E19 /* STSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettings.h; sourceTree = "<group>"; };
+		B7DEC1B718754D9700948E19 /* STSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettings.m; sourceTree = "<group>"; };
+		B7DEC1B9187550A700948E19 /* STSettingItemPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingItemPickerView.h; sourceTree = "<group>"; };
+		B7DEC1BA187550A700948E19 /* STSettingItemPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingItemPickerView.m; sourceTree = "<group>"; };
+		B7DEC1BC187550EB00948E19 /* STSettingItemPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSettingItemPickerView.xib; sourceTree = "<group>"; };
+		B7DEC1BE1875537600948E19 /* STSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingItem.h; sourceTree = "<group>"; };
+		B7DEC1BF1875537600948E19 /* STSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingItem.m; sourceTree = "<group>"; };
+		B7DEC1C1187562A000948E19 /* NSDate+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ST.h"; sourceTree = "<group>"; };
+		B7DEC1C2187562A000948E19 /* NSDate+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ST.m"; sourceTree = "<group>"; };
+		B7DEC1C41875633500948E19 /* STLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLogCell.h; sourceTree = "<group>"; };
+		B7DEC1C51875633500948E19 /* STLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLogCell.m; sourceTree = "<group>"; };
+		B7DEC1CB1875638000948E19 /* STLogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STLogCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7DEC1741875456400948E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEC17D1875456400948E19 /* CoreGraphics.framework in Frameworks */,
+				B7DEC1B5187547C300948E19 /* CoreLocation.framework in Frameworks */,
+				B7DEC17F1875456400948E19 /* UIKit.framework in Frameworks */,
+				B7DEC1B31875478800948E19 /* MapKit.framework in Frameworks */,
+				B7DEC17B1875456400948E19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DEC1951875456400948E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEC19A1875456400948E19 /* XCTest.framework in Frameworks */,
+				B7DEC19C1875456400948E19 /* UIKit.framework in Frameworks */,
+				B7DEC19B1875456400948E19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7DEC16E1875456400948E19 = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1801875456400948E19 /* STBackgroundLocationTester */,
+				B7DEC19F1875456400948E19 /* STBackgroundLocationTesterTests */,
+				B7DEC1791875456400948E19 /* Frameworks */,
+				B7DEC1781875456400948E19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7DEC1781875456400948E19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1771875456400948E19 /* STBackgroundLocationTester.app */,
+				B7DEC1981875456400948E19 /* STBackgroundLocationTesterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7DEC1791875456400948E19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1B4187547C300948E19 /* CoreLocation.framework */,
+				B7DEC1B21875478800948E19 /* MapKit.framework */,
+				B7DEC17A1875456400948E19 /* Foundation.framework */,
+				B7DEC17C1875456400948E19 /* CoreGraphics.framework */,
+				B7DEC17E1875456400948E19 /* UIKit.framework */,
+				B7DEC1991875456400948E19 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7DEC1801875456400948E19 /* STBackgroundLocationTester */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1CA1875635F00948E19 /* Core */,
+				B7DEC1C91875635200948E19 /* Application */,
+				B7DEC1C71875633F00948E19 /* Home */,
+				B7DEC1C81875634A00948E19 /* Settings */,
+				B7DEC1811875456400948E19 /* Supporting Files */,
+			);
+			path = STBackgroundLocationTester;
+			sourceTree = "<group>";
+		};
+		B7DEC1811875456400948E19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1821875456400948E19 /* STBackgroundLocationTester-Info.plist */,
+				B7DEC1831875456400948E19 /* InfoPlist.strings */,
+				B7DEC1861875456400948E19 /* main.m */,
+				B7DEC1881875456400948E19 /* STBackgroundLocationTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7DEC19F1875456400948E19 /* STBackgroundLocationTesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1A51875456400948E19 /* STBackgroundLocationTesterTests.m */,
+				B7DEC1A01875456400948E19 /* Supporting Files */,
+			);
+			path = STBackgroundLocationTesterTests;
+			sourceTree = "<group>";
+		};
+		B7DEC1A01875456400948E19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1A11875456400948E19 /* STBackgroundLocationTesterTests-Info.plist */,
+				B7DEC1A21875456400948E19 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7DEC1C71875633F00948E19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC18F1875456400948E19 /* STViewController.h */,
+				B7DEC1901875456400948E19 /* STViewController.m */,
+				B7DEC1C41875633500948E19 /* STLogCell.h */,
+				B7DEC1C51875633500948E19 /* STLogCell.m */,
+				B7DEC1CB1875638000948E19 /* STLogCell.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		B7DEC1C81875634A00948E19 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1AF187545C300948E19 /* STSettingsViewController.h */,
+				B7DEC1B0187545C300948E19 /* STSettingsViewController.m */,
+				B7DEC1B618754D9700948E19 /* STSettings.h */,
+				B7DEC1B718754D9700948E19 /* STSettings.m */,
+				B7DEC1B9187550A700948E19 /* STSettingItemPickerView.h */,
+				B7DEC1BA187550A700948E19 /* STSettingItemPickerView.m */,
+				B7DEC1BC187550EB00948E19 /* STSettingItemPickerView.xib */,
+				B7DEC1BE1875537600948E19 /* STSettingItem.h */,
+				B7DEC1BF1875537600948E19 /* STSettingItem.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		B7DEC1C91875635200948E19 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1891875456400948E19 /* STAppDelegate.h */,
+				B7DEC18A1875456400948E19 /* STAppDelegate.m */,
+				B7DEC18C1875456400948E19 /* Main.storyboard */,
+				B7DEC1921875456400948E19 /* Images.xcassets */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		B7DEC1CA1875635F00948E19 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC1C1187562A000948E19 /* NSDate+ST.h */,
+				B7DEC1C2187562A000948E19 /* NSDate+ST.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7DEC1761875456400948E19 /* STBackgroundLocationTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DEC1A91875456400948E19 /* Build configuration list for PBXNativeTarget "STBackgroundLocationTester" */;
+			buildPhases = (
+				B7DEC1731875456400948E19 /* Sources */,
+				B7DEC1741875456400948E19 /* Frameworks */,
+				B7DEC1751875456400948E19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STBackgroundLocationTester;
+			productName = STBackgroundLocationTester;
+			productReference = B7DEC1771875456400948E19 /* STBackgroundLocationTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7DEC1971875456400948E19 /* STBackgroundLocationTesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DEC1AC1875456400948E19 /* Build configuration list for PBXNativeTarget "STBackgroundLocationTesterTests" */;
+			buildPhases = (
+				B7DEC1941875456400948E19 /* Sources */,
+				B7DEC1951875456400948E19 /* Frameworks */,
+				B7DEC1961875456400948E19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7DEC19E1875456400948E19 /* PBXTargetDependency */,
+			);
+			name = STBackgroundLocationTesterTests;
+			productName = STBackgroundLocationTesterTests;
+			productReference = B7DEC1981875456400948E19 /* STBackgroundLocationTesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7DEC16F1875456400948E19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ST;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = stack3;
+				TargetAttributes = {
+					B7DEC1761875456400948E19 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B7DEC1971875456400948E19 = {
+						TestTargetID = B7DEC1761875456400948E19;
+					};
+				};
+			};
+			buildConfigurationList = B7DEC1721875456400948E19 /* Build configuration list for PBXProject "STBackgroundLocationTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7DEC16E1875456400948E19;
+			productRefGroup = B7DEC1781875456400948E19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7DEC1761875456400948E19 /* STBackgroundLocationTester */,
+				B7DEC1971875456400948E19 /* STBackgroundLocationTesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7DEC1751875456400948E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEC1931875456400948E19 /* Images.xcassets in Resources */,
+				B7DEC1BD187550EB00948E19 /* STSettingItemPickerView.xib in Resources */,
+				B7DEC1851875456400948E19 /* InfoPlist.strings in Resources */,
+				B7DEC1CC1875638000948E19 /* STLogCell.xib in Resources */,
+				B7DEC18E1875456400948E19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DEC1961875456400948E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEC1A41875456400948E19 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7DEC1731875456400948E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEC1BB187550A700948E19 /* STSettingItemPickerView.m in Sources */,
+				B7DEC1B1187545C300948E19 /* STSettingsViewController.m in Sources */,
+				B7DEC1911875456400948E19 /* STViewController.m in Sources */,
+				B7DEC1871875456400948E19 /* main.m in Sources */,
+				B7DEC18B1875456400948E19 /* STAppDelegate.m in Sources */,
+				B7DEC1C01875537600948E19 /* STSettingItem.m in Sources */,
+				B7DEC1B818754D9700948E19 /* STSettings.m in Sources */,
+				B7DEC1C61875633500948E19 /* STLogCell.m in Sources */,
+				B7DEC1C3187562A000948E19 /* NSDate+ST.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DEC1941875456400948E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEC1A61875456400948E19 /* STBackgroundLocationTesterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7DEC19E1875456400948E19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7DEC1761875456400948E19 /* STBackgroundLocationTester */;
+			targetProxy = B7DEC19D1875456400948E19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7DEC1831875456400948E19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DEC1841875456400948E19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B7DEC18C1875456400948E19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DEC18D1875456400948E19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7DEC1A21875456400948E19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DEC1A31875456400948E19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7DEC1A71875456400948E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7DEC1A81875456400948E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7DEC1AA1875456400948E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STBackgroundLocationTester/STBackgroundLocationTester-Prefix.pch";
+				INFOPLIST_FILE = "STBackgroundLocationTester/STBackgroundLocationTester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B7DEC1AB1875456400948E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STBackgroundLocationTester/STBackgroundLocationTester-Prefix.pch";
+				INFOPLIST_FILE = "STBackgroundLocationTester/STBackgroundLocationTester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B7DEC1AD1875456400948E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STBackgroundLocationTester.app/STBackgroundLocationTester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STBackgroundLocationTester/STBackgroundLocationTester-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "STBackgroundLocationTesterTests/STBackgroundLocationTesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B7DEC1AE1875456400948E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STBackgroundLocationTester.app/STBackgroundLocationTester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STBackgroundLocationTester/STBackgroundLocationTester-Prefix.pch";
+				INFOPLIST_FILE = "STBackgroundLocationTesterTests/STBackgroundLocationTesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7DEC1721875456400948E19 /* Build configuration list for PBXProject "STBackgroundLocationTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DEC1A71875456400948E19 /* Debug */,
+				B7DEC1A81875456400948E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DEC1A91875456400948E19 /* Build configuration list for PBXNativeTarget "STBackgroundLocationTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DEC1AA1875456400948E19 /* Debug */,
+				B7DEC1AB1875456400948E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B7DEC1AC1875456400948E19 /* Build configuration list for PBXNativeTarget "STBackgroundLocationTesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DEC1AD1875456400948E19 /* Debug */,
+				B7DEC1AE1875456400948E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7DEC16F1875456400948E19 /* Project object */;
+}
