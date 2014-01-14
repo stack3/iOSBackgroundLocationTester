@@ -20,6 +20,7 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *noticeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 /** copyで始めるとリンクエラーになってしまうので、ちょっとまどろっこしい名前に */
@@ -64,6 +65,10 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
+    _noticeLabel.hidden = YES;
+    _noticeLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5f];
+    _noticeLabel.textColor = [UIColor whiteColor];
+    
     UIDevice *device = [UIDevice currentDevice];
     _messageLabel.text = [NSString stringWithFormat:@"Battery Level: %.1f", device.batteryLevel];
     
@@ -83,6 +88,7 @@
             (settings.lastUpdatedAt.timeIntervalSince1970 > _viewDisappearedAt.timeIntervalSince1970)) {
             [self stop];
             [self start];
+            [self showNoticeMessage:@"Restarted because settings was changed."];
         }
     }
 }
@@ -180,6 +186,18 @@
     } else {
         _messageLabel.text = @"Battery Unknown";
     }
+}
+
+- (void)showNoticeMessage:(NSString *)message
+{
+    _noticeLabel.text = message;
+    _noticeLabel.hidden = NO;
+    
+    double delayInSeconds = 3.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        _noticeLabel.hidden = YES;
+    });
 }
 
 #pragma mark - CLLocationManagerDelegate
