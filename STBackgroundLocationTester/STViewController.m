@@ -21,7 +21,6 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *noticeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 /** copyで始めるとリンクエラーになってしまうので、ちょっとまどろっこしい名前に */
 @property (weak, nonatomic) IBOutlet UIButton *logsToCopyButton;
@@ -68,9 +67,6 @@
     _noticeLabel.hidden = YES;
     _noticeLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5f];
     _noticeLabel.textColor = [UIColor whiteColor];
-    
-    UIDevice *device = [UIDevice currentDevice];
-    _messageLabel.text = [NSString stringWithFormat:@"Battery Level: %.1f", device.batteryLevel];
     
     [_startButton addTarget:self action:@selector(didTapStartButton) forControlEvents:UIControlEventTouchUpInside];
     
@@ -125,7 +121,9 @@
     [_mapView removeAnnotations:_mapView.annotations];
     
     UIDevice *device = [UIDevice currentDevice];
-    _batteryLevelWhenStarted = device.batteryLevel;
+    if (device.batteryMonitoringEnabled) {
+        [self appendLog:[NSString stringWithFormat:@"Bettery Level: %ld", (long)(device.batteryLevel*100)]];
+    }
     
     [_startButton setTitle:@"Stop" forState:UIControlStateNormal];
     [_logsToCopyButton addTarget:self action:@selector(didTapCopyLogsButton) forControlEvents:UIControlEventTouchUpInside];
@@ -179,13 +177,6 @@
     [logString appendString:@"\n"];
     [_logs addObject:logString];
     [_tableView reloadData];
-    
-    if (_batteryLevelWhenStarted >= 0) {
-        UIDevice *device = [UIDevice currentDevice];
-        _messageLabel.text = [NSString stringWithFormat:@"Battery Level Start: %.1f Current: %.1f", _batteryLevelWhenStarted, device.batteryLevel];
-    } else {
-        _messageLabel.text = @"Battery Unknown";
-    }
 }
 
 - (void)showNoticeMessage:(NSString *)message
